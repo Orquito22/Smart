@@ -1,9 +1,52 @@
 /*HOME*/
-.home-left{
-    
+.home-left {
+
     height: 70vh;
 }
 
-.home-right{
+.home-right {
     height: 70vh;
+}
+
+.banner-1 {
+    height: 10vh;
+}
+
+.quienes-somos {
+    height: 70vh;
+}
+
+.quienes-somos-col-1 {
+    height: 70vh;
+}
+
+.quienes-somos-row {
+    height: 35vh;
+}
+
+.quienes-somos-row-2 {
+    height: 35vh;
+}
+
+.celeste {
+    background-color: #a0bef0;
+}
+
+.verdeclaro {
+    background-color: #cce297;
+}
+
+.verdeoscuro {
+    background-color: #356e5f;
+}
+
+.oliva {
+    background-color: #a39b1f;
+}
+
+
+.redondeo {
+    -webkit-border-bottom-right-radius: 50px;
+    -moz-border-radius-bottomright: 50px;
+    border-bottom-right-radius: 50px;
 }

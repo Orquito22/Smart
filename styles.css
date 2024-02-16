@@ -1,4 +1,11 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Hellix";
+  src: url("Hellix-Bold.eot");
+  src: local("Hellix Bold"), local("Hellix-Bold"), url("Hellix-Bold.eot?#iefix") format("embedded-opentype"), url("Hellix-Bold.woff2") format("woff2"), url("Hellix-Bold.woff") format("woff"), url("Hellix-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
@@ -74,7 +81,7 @@
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-family: "Hellix", sans-serif;
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -597,7 +604,8 @@ progress {
 
 .display-1 {
   font-size: calc(1.625rem + 4.5vw);
-  font-weight: 300;
+  font-family: "Hellix";
+  font-weight: 900;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
@@ -608,7 +616,8 @@ progress {
 
 .display-2 {
   font-size: calc(1.575rem + 3.9vw);
-  font-weight: 300;
+  font-family: "Hellix";
+  font-weight: 900;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
@@ -619,7 +628,8 @@ progress {
 
 .display-3 {
   font-size: calc(1.525rem + 3.3vw);
-  font-weight: 300;
+  font-family: "Hellix";
+  font-weight: 900;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
@@ -630,7 +640,8 @@ progress {
 
 .display-4 {
   font-size: calc(1.475rem + 2.7vw);
-  font-weight: 300;
+  font-family: "Hellix";
+  font-weight: 900;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
@@ -641,7 +652,8 @@ progress {
 
 .display-5 {
   font-size: calc(1.425rem + 2.1vw);
-  font-weight: 300;
+  font-family: "Hellix";
+  font-weight: 900;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
@@ -652,7 +664,8 @@ progress {
 
 .display-6 {
   font-size: calc(1.375rem + 1.5vw);
-  font-weight: 300;
+  font-family: "Hellix";
+  font-weight: 900;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
@@ -5731,7 +5744,7 @@ textarea.form-control-lg {
   z-index: var(--bs-tooltip-zindex);
   display: block;
   margin: var(--bs-tooltip-margin);
-  font-family: var(--bs-font-sans-serif);
+  font-family: "Hellix", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5841,7 +5854,7 @@ textarea.form-control-lg {
   z-index: var(--bs-popover-zindex);
   display: block;
   max-width: var(--bs-popover-max-width);
-  font-family: var(--bs-font-sans-serif);
+  font-family: "Hellix", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;

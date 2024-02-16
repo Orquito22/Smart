@@ -1,12 +1,80 @@
+/*FUENTES*/
+@font-face {
+    font-family: 'Hellix';
+    src: url('Hellix-Bold.eot');
+    src: local('Hellix Bold'), local('Hellix-Bold'),
+        url('Hellix-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Hellix-Bold.woff2') format('woff2'),
+        url('Hellix-Bold.woff') format('woff'),
+        url('Hellix-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hellix';
+    src: url('Hellix-Black.eot');
+    src: local('Hellix Black'), local('Hellix-Black'),
+        url('Hellix-Black.eot?#iefix') format('embedded-opentype'),
+        url('Hellix-Black.woff2') format('woff2'),
+        url('Hellix-Black.woff') format('woff'),
+        url('Hellix-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hellix';
+    src: url('Hellix-Medium.eot');
+    src: local('Hellix Medium'), local('Hellix-Medium'),
+        url('Hellix-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Hellix-Medium.woff2') format('woff2'),
+        url('Hellix-Medium.woff') format('woff'),
+        url('Hellix-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+.color-home {
+    color: #356d5e;
+}
+
+/*FRANJA CELESTE*/
+.celeste {
+    background-color: #a0beef;
+    height: 20px;
+}
+
 /*HOME*/
 .home-left {
 
-    height: 70vh;
+    background-color: #cce296;
+    background-image: url('./statics/fondo-2.png');
+    background-position: center;
+    background-size: 140% auto;
+    background-repeat: no-repeat;
+    height: 80vh;
 }
 
 .home-right {
-    height: 70vh;
+    background-image: url('./statics/home.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
 }
+
+@media (max-width: 576px) {
+
+   
+    .home-right {
+        height: 40vh;
+    }
+}
+
+
+
+
 
 .banner-1 {
     height: 10vh;
@@ -28,21 +96,6 @@
     height: 35vh;
 }
 
-.celeste {
-    background-color: #a0bef0;
-}
-
-.verdeclaro {
-    background-color: #cce297;
-}
-
-.verdeoscuro {
-    background-color: #356e5f;
-}
-
-.oliva {
-    background-color: #a39b1f;
-}
 
 
 .redondeo {

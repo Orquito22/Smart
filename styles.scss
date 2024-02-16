@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'Hellix';
+    src: url('Hellix-Bold.eot');
+    src: local('Hellix Bold'), local('Hellix-Bold'),
+        url('Hellix-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Hellix-Bold.woff2') format('woff2'),
+        url('Hellix-Bold.woff') format('woff'),
+        url('Hellix-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+$font-family-base: 'Hellix', sans-serif;
+$display-font-family: 'Hellix';
+$display-font-weight: 900;
+
+
+
 
 
 @import "./node_modules/bootstrap/scss/bootstrap.scss";

@@ -75,31 +75,87 @@
 
 
 
-
+/*BANNER*/
 .banner-1 {
-    height: 10vh;
+    background-image: url('./statics/banner-1.png');
+    background-position: center;
+    background-size: 110% auto;
+    background-repeat: no-repeat;
+    background-color: #356d5e;
+    height: 25vh;
+    color: white;
+}
+
+.banner-1-xs{
+    background-image: url('./statics/banner-1.png');
+    background-position: center;
+    background-size: 120% auto;
+    background-repeat: no-repeat;
+    background-color: #356d5e;
+    height: 18vh;
+    color: white;
 }
 
 .quienes-somos {
-    height: 70vh;
+    height: 86vh;
+    color: #17316d;
 }
 
 .quienes-somos-col-1 {
-    height: 70vh;
+    background-image: url('./statics/quienes-somos.png');
+    background-position: center;
+    background-size: 400% auto;
+    background-repeat: no-repeat;
+    
+    height: 86vh;
 }
 
 .quienes-somos-row {
-    height: 35vh;
+    background-color: white;
+    height: 43vh;
 }
 
 .quienes-somos-row-2 {
-    height: 35vh;
+    background-color: #a0beef;
+    height: 43vh;
 }
 
-
+/*SERVICIOS*/
+.servicios{
+    
+    height: 80vh;
+}
+.servicios-texto{
+    color: #356d5e;
+}
+.servicios-img{
+    background-image: url('./statics/servicios.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    height: 60px;
+    width: 800px;
+    margin: 15px auto;
+}
 
 .redondeo {
     -webkit-border-bottom-right-radius: 50px;
     -moz-border-radius-bottomright: 50px;
     border-bottom-right-radius: 50px;
+}
+
+.mono{
+    color: white;
+    background-color: #a39b1f;
+}
+
+.depa{
+    color: #356d5e;
+    background-color: #cce296;
+}
+
+.balcon{
+    color: white;
+    background-color: #356d5e;
 }

@@ -14,8 +14,19 @@ $font-family-base: 'Hellix', sans-serif;
 $display-font-family: 'Hellix';
 $display-font-weight: 900;
 
+$display-font-sizes: (
+  1: 6vw,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem
+);
 
-
-
+$font-sizes: (
+  1: 4.5vw,
+  2: 7vw   
+);
+    
 
 @import "./node_modules/bootstrap/scss/bootstrap.scss";

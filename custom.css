@@ -45,15 +45,27 @@
     height: 20px;
 }
 
+/* NAV */
+
+
+
 /*HOME*/
+.centrar-verticalmente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
 .home-left {
 
     background-color: #cce296;
     background-image: url('./statics/fondo-2.png');
     background-position: center;
-    background-size: 140% auto;
+    background-size: 100% auto;
     background-repeat: no-repeat;
-    height: 80vh;
+   
 }
 
 .home-right {

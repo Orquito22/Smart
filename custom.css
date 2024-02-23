@@ -94,42 +94,42 @@
     background-size: 110% auto;
     background-repeat: no-repeat;
     background-color: #356d5e;
-    height: 25vh;
+   
     color: white;
 }
-
-.banner-1-xs{
+.banner-1-xs {
     background-image: url('./statics/banner-1.png');
     background-position: center;
     background-size: 120% auto;
     background-repeat: no-repeat;
     background-color: #356d5e;
-    height: 18vh;
+   
     color: white;
 }
 
-.quienes-somos {
+
+.quienes-somos-color {
     height: 86vh;
     color: #17316d;
 }
 
-.quienes-somos-col-1 {
+.quienes-somos-left {
     background-image: url('./statics/quienes-somos.png');
     background-position: center;
     background-size: 400% auto;
     background-repeat: no-repeat;
     
-    height: 86vh;
+    height: 110vh;
 }
 
-.quienes-somos-row {
+.quienes-somos-blanco {
     background-color: white;
-    height: 43vh;
+   height: 50vh;
 }
 
-.quienes-somos-row-2 {
+.quienes-somos-celeste {
     background-color: #a0beef;
-    height: 43vh;
+    height: 60vh;
 }
 
 /*SERVICIOS*/

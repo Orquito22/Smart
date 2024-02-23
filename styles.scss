@@ -14,19 +14,46 @@ $font-family-base: 'Hellix', sans-serif;
 $display-font-family: 'Hellix';
 $display-font-weight: 900;
 
+// $display-font-sizes: (
+//   1: 6vw,
+//   2: 4.5rem,
+//   3: 4rem,
+//   4: 3.5rem,
+//   5: 3rem,
+//   6: 2.5rem
+// );
+
+// $font-sizes: (
+//   1: 4.5vw,
+//   2: 7vw   
+// );
+
+
 $display-font-sizes: (
   1: 6vw,
-  2: 4.5rem,
-  3: 4rem,
-  4: 3.5rem,
-  5: 3rem,
-  6: 2.5rem
+  2: 5.5rem,
+  3: 5rem,
+  4: 4.5rem,
+  5: 4rem,
+  6: 3.5rem
 );
 
 $font-sizes: (
   1: 4.5vw,
-  2: 7vw   
+  2: 4vw,
+  3: 3.5vw,
+  4: 3vw,
+  5: 7vw  
 );
-    
 
+$h1-font-size: 3rem;
+$h2-font-size: 2.5rem;
+$h3-font-size: 2rem;
+$h4-font-size: 1.5rem;
+$h5-font-size: 1rem;
+$h6-font-size: 0.5rem;
+
+    
+$navbar-light-icon-color: #356d5e;
+$navbar-light-toggler-border-color: #356d5e;
 @import "./node_modules/bootstrap/scss/bootstrap.scss";

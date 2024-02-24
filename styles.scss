@@ -1,13 +1,13 @@
 @font-face {
-    font-family: 'Hellix';
-    src: url('Hellix-Bold.eot');
-    src: local('Hellix Bold'), local('Hellix-Bold'),
-        url('Hellix-Bold.eot?#iefix') format('embedded-opentype'),
-        url('Hellix-Bold.woff2') format('woff2'),
-        url('Hellix-Bold.woff') format('woff'),
-        url('Hellix-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+  font-family: 'Hellix';
+  src: url('Hellix-Bold.eot');
+  src: local('Hellix Bold'), local('Hellix-Bold'),
+    url('Hellix-Bold.eot?#iefix') format('embedded-opentype'),
+    url('Hellix-Bold.woff2') format('woff2'),
+    url('Hellix-Bold.woff') format('woff'),
+    url('Hellix-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
 }
 
 $font-family-base: 'Hellix', sans-serif;
@@ -25,9 +25,8 @@ $display-font-weight: 900;
 
 // $font-sizes: (
 //   1: 4.5vw,
-//   2: 7vw   
+//   2: 7vw
 // );
-
 
 $display-font-sizes: (
   1: 6vw,
@@ -35,7 +34,7 @@ $display-font-sizes: (
   3: 5rem,
   4: 4.5rem,
   5: 4rem,
-  6: 3.5rem
+  6: 3.5rem,
 );
 
 $font-sizes: (
@@ -43,7 +42,7 @@ $font-sizes: (
   2: 4vw,
   3: 3.5vw,
   4: 3vw,
-  5: 7vw  
+  5: 7vw,
 );
 
 $h1-font-size: 3rem;
@@ -53,7 +52,6 @@ $h4-font-size: 1.5rem;
 $h5-font-size: 1rem;
 $h6-font-size: 0.5rem;
 
-    
 $navbar-light-icon-color: #356d5e;
 $navbar-light-toggler-border-color: #356d5e;
-@import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import './node_modules/bootstrap/scss/bootstrap.scss';

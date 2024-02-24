@@ -73,7 +73,8 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 70vh;
+    
 }
 
 @media (max-width: 576px) {
@@ -109,27 +110,38 @@
 
 
 .quienes-somos-color {
-    height: 86vh;
+    
     color: #17316d;
 }
 
 .quienes-somos-left {
-    background-image: url('./statics/quienes-somos.png');
+   
     background-position: center;
+    
+    background-image: url('./statics/quienes-somos.png');
     background-size: 400% auto;
     background-repeat: no-repeat;
-    
-    height: 110vh;
+    min-height: 45vh;
+   
+}
+@media (max-width: 992px){
+    .quienes-somos-left {
+   
+        background-size: 110% auto;
+        background-repeat: no-repeat;
+        min-height: 45vh;
+       
+    }
 }
 
 .quienes-somos-blanco {
     background-color: white;
-   height: 50vh;
+   
 }
 
 .quienes-somos-celeste {
     background-color: #a0beef;
-    height: 60vh;
+    
 }
 
 /*SERVICIOS*/
@@ -171,3 +183,22 @@
     color: white;
     background-color: #356d5e;
 }
+
+/* FOTOS */
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+    
+  }
+
+  /* FOOTER */
+
+  .footer{
+    background-color:  #356d5e;
+  }
+
+  .dorado{
+    background-color: #a39b1f;
+    height: 20px;
+  }

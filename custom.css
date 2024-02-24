@@ -1,36 +1,39 @@
 /*FUENTES*/
 @font-face {
     font-family: 'Hellix';
-    src: url('Hellix-Bold.eot');
+    src: url('./statics/fonts/Hellix-Bold.eot');
+    
     src: local('Hellix Bold'), local('Hellix-Bold'),
-        url('Hellix-Bold.eot?#iefix') format('embedded-opentype'),
-        url('Hellix-Bold.woff2') format('woff2'),
-        url('Hellix-Bold.woff') format('woff'),
-        url('Hellix-Bold.ttf') format('truetype');
+        url('./statics/fonts/Hellix-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./statics/fonts/Hellix-Bold.woff2') format('woff2'),
+        url('./statics/fonts/Hellix-Bold.woff') format('woff'),
+        url('./statics/fonts/Hellix-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Hellix';
-    src: url('Hellix-Black.eot');
+    src: url('./statics/fonts/Hellix-Black.eot');
+    
     src: local('Hellix Black'), local('Hellix-Black'),
-        url('Hellix-Black.eot?#iefix') format('embedded-opentype'),
-        url('Hellix-Black.woff2') format('woff2'),
-        url('Hellix-Black.woff') format('woff'),
-        url('Hellix-Black.ttf') format('truetype');
+        url('./statics/fonts/Hellix-Black.eot?#iefix') format('embedded-opentype'),
+        url('./statics/fonts/Hellix-Black.woff2') format('woff2'),
+        url('./statics/fonts/Hellix-Black.woff') format('woff'),
+        url('./statics/fonts/Hellix-Black.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Hellix';
-    src: url('Hellix-Medium.eot');
+    src: url('./statics/fonts/Hellix-Medium.eot');
+    
     src: local('Hellix Medium'), local('Hellix-Medium'),
-        url('Hellix-Medium.eot?#iefix') format('embedded-opentype'),
-        url('Hellix-Medium.woff2') format('woff2'),
-        url('Hellix-Medium.woff') format('woff'),
-        url('Hellix-Medium.ttf') format('truetype');
+        url('./statics/fonts/Hellix-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./statics/fonts/Hellix-Medium.woff2') format('woff2'),
+        url('./statics/fonts/Hellix-Medium.woff') format('woff'),
+        url('./statics/fonts/Hellix-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }

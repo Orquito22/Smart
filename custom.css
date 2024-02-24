@@ -2,7 +2,7 @@
 @font-face {
     font-family: 'Hellix';
     src: url('./statics/fonts/Hellix-Bold.eot');
-    
+
     src: local('Hellix Bold'), local('Hellix-Bold'),
         url('./statics/fonts/Hellix-Bold.eot?#iefix') format('embedded-opentype'),
         url('./statics/fonts/Hellix-Bold.woff2') format('woff2'),
@@ -15,7 +15,7 @@
 @font-face {
     font-family: 'Hellix';
     src: url('./statics/fonts/Hellix-Black.eot');
-    
+
     src: local('Hellix Black'), local('Hellix-Black'),
         url('./statics/fonts/Hellix-Black.eot?#iefix') format('embedded-opentype'),
         url('./statics/fonts/Hellix-Black.woff2') format('woff2'),
@@ -28,7 +28,7 @@
 @font-face {
     font-family: 'Hellix';
     src: url('./statics/fonts/Hellix-Medium.eot');
-    
+
     src: local('Hellix Medium'), local('Hellix-Medium'),
         url('./statics/fonts/Hellix-Medium.eot?#iefix') format('embedded-opentype'),
         url('./statics/fonts/Hellix-Medium.woff2') format('woff2'),
@@ -49,6 +49,17 @@
 }
 
 /* NAV */
+.navFondo{
+    background-image: url('./statics/fondoNav.svg');
+    background-size: 100% auto;
+    /* background-attachment: fixed; */
+    background-repeat: repeat;
+    background-position: center;
+    background-position-x: 0vw;
+    background-position-y: -8vh;
+}
+
+
 
 
 
@@ -64,11 +75,29 @@
 .home-left {
 
     background-color: #cce296;
-    background-image: url('./statics/fondo-2.png');
-    background-position: center;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-   
+    background-image: url('./statics/fondoHome.svg');
+    background-size: 180% auto;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-position: left;
+    background-position-x: -55vw;
+    background-position-y: -50vh;
+
+}
+
+@media (max-width: 576px){
+    .home-left {
+
+        background-color: #cce296;
+        background-image: url('./statics/fondoHome.svg');
+        background-size: 250% auto;
+        background-attachment: fixed;
+        background-repeat: repeat;
+        background-position: left;
+        background-position-x: 0vw;
+        background-position-y: 0vh;
+    
+    }
 }
 
 .home-right {
@@ -77,12 +106,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 70vh;
-    
+
 }
 
 @media (max-width: 576px) {
 
-   
+
     .home-right {
         height: 40vh;
     }
@@ -93,74 +122,82 @@
 
 /*BANNER*/
 .banner-1 {
-    background-image: url('./statics/banner-1.png');
-    background-position: center;
-    background-size: 110% auto;
-    background-repeat: no-repeat;
-    background-color: #356d5e;
-   
+    background-image: url('./statics/fondoConecta.svg');
+    
+    background-size: 100% auto;
+    background-attachment: fixed;
+    background-position-y: -10vh;
+    background-repeat: repeat;
     color: white;
 }
-.banner-1-xs {
-    background-image: url('./statics/banner-1.png');
-    background-position: center;
-    background-size: 120% auto;
-    background-repeat: no-repeat;
-    background-color: #356d5e;
-   
-    color: white;
+
+@media (max-width: 576px){
+    .banner-1 {
+       
+        background-image: url('./statics/banner-1-xs.svg');
+        background-size: 100% auto;
+        background-attachment: fixed;
+       
+        background-repeat: repeat;
+        color: white;
+    }
 }
+
+
 
 
 .quienes-somos-color {
-    
+
     color: #17316d;
 }
 
 .quienes-somos-left {
-   
+
     background-position: center;
-    
+
     background-image: url('./statics/quienes-somos.png');
     background-size: 400% auto;
     background-repeat: no-repeat;
     min-height: 45vh;
-   
+
 }
-@media (max-width: 992px){
+
+@media (max-width: 992px) {
     .quienes-somos-left {
-   
+
         background-size: 110% auto;
         background-repeat: no-repeat;
         min-height: 45vh;
-       
+
     }
 }
 
 .quienes-somos-blanco {
     background-color: white;
-   
+
 }
 
 .quienes-somos-celeste {
     background-color: #a0beef;
-    
+
 }
 
 /*SERVICIOS*/
-.servicios{
-    
+.servicios {
+
     height: 80vh;
 }
-.servicios-texto{
+
+.servicios-texto {
     color: #356d5e;
 }
-.servicios-img{
+
+.servicios-img {
     background-image: url('./statics/servicios.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    
+
     height: 60px;
     width: 800px;
     margin: 15px auto;
@@ -172,17 +209,17 @@
     border-bottom-right-radius: 50px;
 }
 
-.mono{
+.mono {
     color: white;
     background-color: #a39b1f;
 }
 
-.depa{
+.depa {
     color: #356d5e;
     background-color: #cce296;
 }
 
-.balcon{
+.balcon {
     color: white;
     background-color: #356d5e;
 }
@@ -192,16 +229,37 @@
 .no-gutters {
     margin-right: 0;
     margin-left: 0;
-    
-  }
 
-  /* FOOTER */
+}
 
-  .footer{
-    background-color:  #356d5e;
-  }
+/* FOOTER */
 
-  .dorado{
+.footer {
+    background-color: #356d5e;
+}
+
+.dorado {
     background-color: #a39b1f;
     height: 20px;
-  }
+}
+
+
+/* DONDE */
+
+.donde{
+    background-image: url('./statics/fondoDonde.svg');
+    background-size: 150% auto;
+    background-attachment: fixed; 
+    background-repeat: repeat;
+    background-position: center;
+    background-position-x: -40vw;
+    background-position-y: 20vh;
+}
+
+@media (max-width: 576px){
+    .donde{
+        background-size: 350% auto;
+        background-position-x: -108vw;
+        background-position-y: -44vh;
+    }
+}

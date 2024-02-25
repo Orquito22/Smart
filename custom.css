@@ -49,6 +49,10 @@
 }
 
 /* NAV */
+
+.navbar-toggler{
+  margin-right:3.5vh;
+}
 .navFondo {
   background-image: url('./statics/fondoNav.svg');
   background-size: 100% auto;
@@ -114,21 +118,21 @@
 /*BANNER*/
 .banner-1 {
   background-image: url('./statics/fondoConecta.svg');
-
+  background-color: #356d5e;
   background-size: 100% auto;
   background-attachment: fixed;
-  background-position-y: -10vh;
-  background-repeat: repeat;
+  background-position-y: 35vh;
+  background-repeat: no-repeat;
   color: white;
 }
 
 @media (max-width: 576px) {
   .banner-1 {
     background-image: url('./statics/banner-1-xs.svg');
-    background-size: 100% auto;
+    background-size: 110% auto;
     background-attachment: fixed;
-
-    background-repeat: repeat;
+    background-position: center;
+    background-position-y: 20vh;
     color: white;
   }
 }

@@ -53,8 +53,8 @@
 .navFondo{
     background-image: url('./statics/fondoNav.svg');
     background-size: 100% auto;
-    /* background-attachment: fixed; */
-    background-repeat: repeat;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
     background-position: center;
     background-position-x: 0vw;
     background-position-y: -8vh;
@@ -142,8 +142,7 @@
 }
 
 
-  color: white;
-}
+
 
 
 
@@ -185,54 +184,18 @@
 }
 
 /*SERVICIOS*/
-.servicios {
-
-    height: 80vh;
-}
-
-.servicios-texto {
-    color: #356d5e;
-}
-
-.servicios-img {
-    background-image: url('./statics/servicios.png');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-
-    height: 60px;
-    width: 800px;
-    margin: 15px auto;
-
-  color: #17316d;
-}
-
-.quienes-somos-left {
-  background-position: center;
-
-  background-image: url('./statics/quienes-somos.png');
-  background-size: 400% auto;
-  background-repeat: no-repeat;
-  min-height: 45vh;
-}
-@media (max-width: 992px) {
-  .quienes-somos-left {
-    background-size: 110% auto;
-    background-repeat: no-repeat;
-    min-height: 45vh;
-  }
-}
-
-.quienes-somos-blanco {
-  background-color: white;
-}
-
-.quienes-somos-celeste {
-  background-color: #a0beef;
-}
-
 /*SERVICIOS*/
 .service-conteiner {
+  /* background */
+  background-image: url('./statics/fondoServ.svg');
+  background-size: 220% auto;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-position: left;
+  background-position-x: -25vw;
+  background-position-y: -100vh;
+  /*  */
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -295,7 +258,6 @@ h5 {
   justify-content: space-between;
   padding: 7rem 6rem;
   padding-top: 1rem;
-
 }
 
 .redondeo {
@@ -311,19 +273,6 @@ h5 {
 }
 
 .mono {
-    color: white;
-    background-color: #a39b1f;
-}
-
-.depa {
-    color: #356d5e;
-    background-color: #cce296;
-}
-
-.balcon {
-    color: white;
-    background-color: #356d5e;
-
   color: white;
   background-color: #a39b1f;
   display: flex;
@@ -352,13 +301,13 @@ h5 {
   color: white;
   background-color: #356d5e;
   padding: 3rem;
-
 }
 
 .balcon-title {
   font-size: 1.5rem;
   font-weight: 600;
 }
+
 /* FOTOS */
 
 .no-gutters {
@@ -400,9 +349,6 @@ h5 {
     }
 }
 
-  margin-right: 0;
-  margin-left: 0;
-}
 /* FOOTER */
 
 .footer {

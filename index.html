@@ -17,7 +17,7 @@
         <div class="container-fluid p-0 ">
 
             <a class="navbar-brand d-none d-xl-block " href="#">
-                <img src="./statics/logoNav.svg" alt="" style="height: 12vh; padding: 1vh; margin-left: 9vw;">
+                <img src="./statics/logoNav.svg" alt="" style="height: 12vh; padding: 1vh; margin-left: 9.3vw;">
             </a>
             <a class="navbar-brand d-xl-none" href="#">
                 <img src="./statics/logoNav.svg" alt="" style="height: 10vh; padding: 1vh; margin-left: 8vw;">
@@ -37,30 +37,30 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!--  " -->
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02" >
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0  " style="justify-content: space-around;width: 100%;">
+            <div class="collapse navbar-collapse " id="navbarTogglerDemo02" >
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 " style=" justify-content: space-around;width: 100%;">
 
-                    <li class="nav-item p-0 ">
+                    <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#home">
                             <h4 class="color-home"><b>Home</b></h4>
                         </a>
                     </li>
-                    <li class="nav-item p-0">
+                    <li class="nav-item ">
                         <a class="nav-link" href="#quienes">
                             <h4 class="color-home" ><b>Quienes somos</b></h4>
                         </a>
                     </li>
-                    <li class="nav-item p-0">
+                    <li class="nav-item ">
                         <a class="nav-link" href="#servicios">
                             <h4 class="color-home"><b>Servicios</b></h4>
                         </a>
                     </li>
-                    <li class="nav-item p-0">
+                    <li class="nav-item ">
                         <a class="nav-link" href="#ubicacion">
                             <h4 class="color-home"><b>Donde nos encontramos?</b></h4>
                         </a>
                     </li>
-                    <li class="nav-item p-0">
+                    <li class="nav-item ">
                         <a class="nav-link" href="#contacto">
                             <h4 class="color-home"><b>Contacto</b></h4>
                         </a>
@@ -80,7 +80,11 @@
 
                 </ul>
 
+
             </div>
+<!--  -->
+
+
 
         </div>
     </nav>
@@ -92,14 +96,14 @@
 
     <!-- HOME -->
 
-    <section class="container-fluid" id="home">
+    <section class="container-fluid" id="home" style="background-color: #cce296;">
         <div class="row color-home">
-            <div class=" col-md-4 order-first order-md-1 home-right"></div>
-            <div class="col-md-8 d-flex align-items-center home-left">
+            <div class=" col-md-4 order-first order-md-1 home-right fadein  "></div>
+            <div class="col-md-8 d-flex align-items-center home-left ">
                 <div class="row" style="margin-left: -2.5vw;">
                     <div class="col-md-2 col-1 p-0"></div>
                     <div class="col-md-8 col-10  p-0">
-                        <div class="row ">
+                        <div class="row transicion-izq">
 
                             <div class="d-none d-xs-none d-sm-none d-md-block d-lg-block  display-4"
                                 style="white-space: nowrap;">Smart Residence:
@@ -177,12 +181,12 @@
 
         <div class="row quienes-somos-color">
 
-            <div class="col-lg-4 quienes-somos-left "></div>
+            <div class="col-lg-4 quienes-somos-left fadein1 "></div>
             <div class="col-lg-8">
 
                 <div class="row d-flex align-items-center quienes-somos-blanco ">
                     <div class="col-1 p-0"></div>
-                    <div class="col-10 p-0">
+                    <div class="col-10 p-0 transicion-derecha">
                         <div class="d-none d-xs-none d-sm-none d-md-block d-lg-block  display-5"
                             style="white-space: nowrap; padding-top: 8vh;">Quienes Somos</div>
                         <div class="d-block  d-md-none  display-5" style="margin-top: 0vh; padding-top: 2vh;"><b>Quienes
@@ -204,10 +208,10 @@
                     </div>
                     <div class="col-1 p-0"></div>
                 </div>
-                <div class="row d-flex align-items-center quienes-somos-celeste ">
+                <div class="row d-flex align-items-center quienes-somos-celeste">
                     <div class="col-1 p-0"></div>
-                    <div class="col-10 p-0">
-                        <p>
+                    <div class="col-10 p-0 transicion-derecha1 ">
+                        <p class="">
                         <h4 class="" style="padding-top: 8vh;padding-bottom: 8vh;">
                             Nos regimos como una opción moderna y tecnológica para aquellos que buscan algo
                             más del
@@ -231,7 +235,7 @@
 
     <!-- SERVICIOS -->
 
-    <section class="container-fluid service-conteiner" id="servicios">
+    <section class="container-fluid service-conteiner fadein2" id="servicios">
         <div class="d-none d-xs-none d-sm-none d-md-block d-lg-block  display-5"
             style="margin-top: 3vh; padding-top: 2vh; color:#356d5e ;">
             Servicios
@@ -404,7 +408,7 @@
 
     <section class="container-fluid" id="ubicacion" style="background-color: #a39b1f;color: white;" id="home">
         <div class="row donde">
-            <div class="col-md-4 order-first order-md-1"
+            <div class="col-md-4 order-first order-md-1 fadein3"
                 style="background-position: center;
         background-size: cover; background-repeat: no-repeat; height: 70vh; background-image: url('./statics/dondeestamos.jpg')"></div>
 
@@ -412,7 +416,7 @@
             <div class="col-md-8 d-flex align-items-center">
                 <div class="row" style="margin-left: -2.5vw;">
                     <div class="col-md-2 col-1 p-0"></div>
-                    <div class="col-md-8 col-10  p-0">
+                    <div class="col-md-8 col-10  p-0 transicion-izq1">
                         <div class="row ">
 
                             <div class="d-none d-xs-none d-sm-none d-md-block d-lg-block  display-5"
@@ -471,12 +475,12 @@
 
         <div class="row quienes-somos-color">
 
-            <div class="col-lg-5 contacto-left "></div>
-            <div class="col-lg-7">
+            <div class="col-lg-5 contacto-left fadein4"></div>
+            <div class="col-lg-7 ">
 
                 <div class="row d-flex align-items-center contact-form-color">
                     <div class="col-1 p-0 "></div>
-                    <div class="col-10 p-0 mb-5">
+                    <div class="col-10 p-0 mb-5 transicionY">
                         <div class=" d-md-block d-lg-block  display-4"
                             style="white-space: nowrap; padding-top: 4vh; color:#356d5e">Contacto</div>
                      

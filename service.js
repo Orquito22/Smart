@@ -72,3 +72,52 @@ function mostrarAlerta(mensaje, tipo) {
   var liveToast = new bootstrap.Toast(toast);
   liveToast.show();
 }
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelector('.transicion-izq').classList.add('show');
+  document.querySelector('.fadein').classList.add('show');
+
+
+
+
+
+
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  window.addEventListener('scroll', function () {
+    var scrollPosition = window.scrollY;
+    var windowHeight = window.innerHeight;
+
+    // Clases de transición hacia la derecha
+    var transicionDerechaElements = document.querySelectorAll('.transicionY, .transicion-derecha, .transicion-derecha1');
+    transicionDerechaElements.forEach(function (element) {
+      var elementOffset = element.offsetTop;
+      if (scrollPosition > (elementOffset - windowHeight)) {
+        element.classList.add('show');
+      }
+    });
+
+    // Clases de transición hacia la izquierda
+    var transicionIzquierdaElements = document.querySelectorAll(' .transicion-izq1');
+    transicionIzquierdaElements.forEach(function (element) {
+      var elementOffset = element.offsetTop;
+      if (scrollPosition > (elementOffset - windowHeight)) {
+        element.classList.add('show');
+      }
+    });
+
+    // Clases de fadein
+    var fadeinElements = document.querySelectorAll(' .fadein1, .fadein2, .fadein3, .fadein4');
+    fadeinElements.forEach(function (element) {
+      var elementOffset = element.offsetTop;
+      if (scrollPosition > (elementOffset - windowHeight)) {
+        element.classList.add('show');
+      }
+    });
+  });
+});
+
+
+

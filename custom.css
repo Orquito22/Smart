@@ -40,6 +40,7 @@
 
 .color-home {
   color: #356d5e;
+  
 }
 
 /*FRANJA CELESTE*/
@@ -61,380 +62,493 @@
 
 
 
-  @media (max-width: 576px) {
-    .navFondo {
-      background-position-y: 1vh;
-    }
+@media (max-width: 576px) {
+  .navFondo {
+    background-position-y: 1vh;
   }
+}
 
-  /*HOME*/
-  .centrar-verticalmente {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
+/*HOME*/
+.centrar-verticalmente {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
 
+.home-left {
+  background-color: #cce296;
+  background-image: url('./statics/fondoHome.svg');
+  background-size: 180% auto;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-position: left;
+  background-position-x: -55vw;
+  background-position-y: -50vh;
+ }
+
+
+
+
+
+@media (max-width: 576px) {
   .home-left {
     background-color: #cce296;
     background-image: url('./statics/fondoHome.svg');
-    background-size: 180% auto;
+    background-size: 250% auto;
     background-attachment: fixed;
     background-repeat: repeat;
     background-position: left;
-    background-position-x: -55vw;
-    background-position-y: -50vh;
+    background-position-x: 0vw;
+    background-position-y: 0vh;
   }
+}
 
-  @media (max-width: 576px) {
-    .home-left {
-      background-color: #cce296;
-      background-image: url('./statics/fondoHome.svg');
-      background-size: 250% auto;
-      background-attachment: fixed;
-      background-repeat: repeat;
-      background-position: left;
-      background-position-x: 0vw;
-      background-position-y: 0vh;
-    }
-  }
+.home-right {
+  
+  background-image: url('./statics/home.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+}
 
+@media (max-width: 576px) {
   .home-right {
-    background-image: url('./statics/home.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 70vh;
+    height: 40vh;
   }
+}
 
-  @media (max-width: 576px) {
-    .home-right {
-      height: 40vh;
-    }
-  }
+/*BANNER*/
+.banner-1 {
+  background-image: url('./statics/fondoConecta.svg');
 
-  /*BANNER*/
+  background-size: 100% auto;
+  background-attachment: fixed;
+  background-position-y: -10vh;
+  background-repeat: repeat;
+  color: white;
+}
+
+@media (max-width: 576px) {
   .banner-1 {
-    background-image: url('./statics/fondoConecta.svg');
-
+    background-image: url('./statics/banner-1-xs.svg');
     background-size: 100% auto;
     background-attachment: fixed;
-    background-position-y: -10vh;
+
     background-repeat: repeat;
     color: white;
   }
+}
 
-  @media (max-width: 576px) {
-    .banner-1 {
-      background-image: url('./statics/banner-1-xs.svg');
-      background-size: 100% auto;
-      background-attachment: fixed;
+.quienes-somos-color {
+  color: #17316d;
+}
 
-      background-repeat: repeat;
-      color: white;
-    }
-  }
+.quienes-somos-left {
+  background-position: center;
 
-  .quienes-somos-color {
-    color: #17316d;
-  }
+  background-image: url('./statics/foto.webp');
+  background-size: 450% auto;
+  background-repeat: no-repeat;
+  min-height: 45vh;
+}
 
+@media (max-width: 992px) {
   .quienes-somos-left {
-    background-position: center;
-
-    background-image: url('./statics/foto.webp');
-    background-size: 450% auto;
+    background-size: 150% auto;
     background-repeat: no-repeat;
-    min-height: 45vh;
+    min-height: 35vh;
   }
+}
 
-  @media (max-width: 992px) {
-    .quienes-somos-left {
-      background-size: 110% auto;
-      background-repeat: no-repeat;
-      min-height: 35vh;
-    }
-  }
+.quienes-somos-blanco {
+  background-color: white;
+}
 
-  .quienes-somos-blanco {
-    background-color: white;
-  }
+.quienes-somos-celeste {
+  background-color: #a0beef;
+}
 
-  .quienes-somos-celeste {
-    background-color: #a0beef;
-  }
+/*SERVICIOS*/
+.service-conteiner {
+  background-image: url('./statics/fondoServ.svg');
+  background-size: 220% auto;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-position: left;
+  background-position-x: -25vw;
+  background-position-y: -100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #356d5e;
+  text-align: center;
+}
 
-  /*SERVICIOS*/
-  .service-conteiner {
-    background-image: url('./statics/fondoServ.svg');
-    background-size: 220% auto;
-    background-attachment: fixed;
-    background-repeat: repeat;
-    background-position: left;
-    background-position-x: -25vw;
-    background-position-y: -100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #356d5e;
-    text-align: center;
-  }
+.service-title {
+  color: #356d5e;
+  font-weight: 600;
+}
 
-  .service-title {
-    color: #356d5e;
-    font-weight: 600;
-  }
+.service-description {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #356d5e;
+  padding: 0 18rem;
+  font-size: 1.5rem;
+  gap: 1rem;
+}
 
-  .service-description {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: #356d5e;
-    padding: 0 18rem;
-    font-size: 1.5rem;
-    gap: 1rem;
-  }
+.title-service {
+  color: #356d5e;
+  font-weight: 600;
+}
 
-  .title-service {
-    color: #356d5e;
-    font-weight: 600;
-  }
+.service-icons {
+  height: 5rem;
+}
 
-  .service-icons {
-    height: 5rem;
-  }
+.list-prop {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 1rem;
+}
 
-  .list-prop {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    gap: 1rem;
-  }
+.icon {
+  width: 1rem;
+  height: 1rem;
+}
 
-  .icon {
-    width: 1rem;
-    height: 1rem;
-  }
+.item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 
-  .item {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
+.dual {
+  width: 50%;
+}
 
-  .dual {
-    width: 50%;
-  }
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-  .left {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+.row-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 7rem 6rem;
+  padding-top: 1rem;
+}
 
-  .row-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 7rem 6rem;
-    padding-top: 1rem;
-  }
+.redondeo {
+  -webkit-border-bottom-right-radius: 50px;
+  -moz-border-radius-bottomright: 50px;
+  border-bottom-right-radius: 50px;
+}
 
-  .redondeo {
-    -webkit-border-bottom-right-radius: 50px;
-    -moz-border-radius-bottomright: 50px;
-    border-bottom-right-radius: 50px;
-  }
+.contenedores {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: space-between;
+}
 
-  .contenedores {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    justify-content: space-between;
-  }
+.mono {
+  color: white;
+  background-color: #a39b1f;
+  display: flex;
+  justify-content: start;
+  text-align: start;
+  align-items: center;
+  padding: 3rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
 
-  .mono {
-    color: white;
-    background-color: #a39b1f;
-    display: flex;
-    justify-content: start;
-    text-align: start;
-    align-items: center;
-    padding: 3rem;
-    font-weight: 600;
-    font-size: 1.5rem;
-  }
+.depa {
+  color: #356d5e;
+  background-color: #cce296;
+  display: flex;
+  justify-content: start;
+  text-align: start;
+  align-items: center;
+  padding: 3rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
 
-  .depa {
-    color: #356d5e;
-    background-color: #cce296;
-    display: flex;
-    justify-content: start;
-    text-align: start;
-    align-items: center;
-    padding: 3rem;
-    font-weight: 600;
-    font-size: 1.5rem;
-  }
+.balcon {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  color: white;
+  background-color: #356d5e;
+  padding: 3rem;
+}
 
-  .balcon {
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-    color: white;
-    background-color: #356d5e;
-    padding: 3rem;
-  }
+.balcon-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
 
-  .balcon-title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-  }
-
-  /* @media (max-width: 576px){
+/* @media (max-width: 576px){
   .margen{
     margin-left: 2rem;
   }
 } */
 
-  /* FOTOS */
+/* FOTOS */
 
-  .no-gutters {
-    margin-right: 0;
-    margin-left: 0;
-  }
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
 
-  /* FOOTER */
+/* FOOTER */
 
-  .footer {
-    background-color: #356d5e;
-  }
+.footer {
+  background-color: #356d5e;
+}
 
-  .dorado {
-    background-color: #a39b1f;
-    height: 20px;
-  }
+.dorado {
+  background-color: #a39b1f;
+  height: 20px;
+}
 
-  /* DONDE */
+/* DONDE */
 
+.donde {
+  background-image: url('./statics/fondoDonde.svg');
+  background-size: 150% auto;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-position: center;
+  background-position-x: -40vw;
+  background-position-y: 20vh;
+}
+
+.row-service {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin: 2rem 4rem;
+}
+
+.row-service-left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+@media (max-width: 576px) {
   .donde {
-    background-image: url('./statics/fondoDonde.svg');
-    background-size: 150% auto;
-    background-attachment: fixed;
-    background-repeat: repeat;
-    background-position: center;
-    background-position-x: -40vw;
-    background-position-y: 20vh;
+    background-size: 350% auto;
+    background-position-x: -108vw;
+    background-position-y: -44vh;
+  }
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #356d5e;
+}
+
+.dorado {
+  background-color: #a39b1f;
+  height: 20px;
+}
+
+@media (width < 768px) {
+  .row-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+
+  .service-icons {
+    height: 2rem;
   }
 
   .row-service {
     display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    margin: 2rem 4rem;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
   .row-service-left {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
   }
 
-  @media (max-width: 576px) {
-    .donde {
-      background-size: 350% auto;
-      background-position-x: -108vw;
-      background-position-y: -44vh;
-    }
+  .service-description {
+    padding: 1rem;
   }
 
-  /* FOOTER */
-
-  .footer {
-    background-color: #356d5e;
-  }
-
-  .dorado {
-    background-color: #a39b1f;
-    height: 20px;
-  }
-
-  @media (width < 768px) {
-    .row-content {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      justify-content: space-between;
-      padding: 0;
-      margin-bottom: 1rem;
-    }
-
-    .service-icons {
-      height: 2rem;
-    }
-
-    .row-service {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      margin: 0;
-      gap: 1.5rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .row-service-left {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
-
-    .service-description {
-      padding: 1rem;
-    }
-
-    .col-12 {
-      padding: 0;
-    }
-  }
-
-  /*CONTACTO*/
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    background-color: #cce296;
-    padding: 2rem;
-  }
-
-  .button {
-    background-color: #356d5e;
-    padding: 1rem 3rem;
-    cursor: pointer;
-  }
-
-  .button-send {
-    -webkit-border-bottom-right-radius: 50px;
-    -moz-border-radius-bottomright: 50px;
-    border-bottom-right-radius: 30px;
-  }
-
-  .contact-form-color {
-    background-color: white;
+  .col-12 {
     padding: 0;
   }
+}
 
-  .contact-form-label {
-    color: #356d5e;
-    font-weight: 600;
+/*CONTACTO*/
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: #cce296;
+  padding: 2rem;
+}
+
+.button {
+  background-color: #356d5e;
+  padding: 1rem 3rem;
+  cursor: pointer;
+}
+
+.button-send {
+  -webkit-border-bottom-right-radius: 50px;
+  -moz-border-radius-bottomright: 50px;
+  border-bottom-right-radius: 30px;
+}
+
+.contact-form-color {
+  background-color: white;
+  padding: 0;
+}
+
+.contact-form-label {
+  color: #356d5e;
+  font-weight: 600;
+}
+
+.contacto-left {
+  background-position: center;
+  background-image: url('./statics/galleryB.jpg');
+  background-repeat: no-repeat;
+  min-height: 45vh;
+}
+
+
+@media (max-width: 1199px) {
+
+  .navbar-nav li {
+
+    margin-left: 9.2vw;
   }
 
-  .contacto-left {
-    background-position: center;
-    background-image: url('./statics/galleryB.jpg');
-    background-repeat: no-repeat;
-    min-height: 45vh;
-  }
+} 
 
 
+/* ANIMACIONES*/
+/* transicion derecha */
+.transicionY{
+  transition: transform 2s; /* Transición de transformación con duración de 0.5 segundos */
+  transform: translateY(10%);
+}
+.transicionY.show {
+  transform: translateY(0); /* Al agregar la clase 'show', el div se desplaza hacia el centro */
+}
+
+.transicion-derecha {
+  transition: transform 3s; /* Transición de transformación con duración de 0.5 segundos */
+  transform: translateX(10%); /* Inicialmente, mueve el div fuera de la vista hacia la derecha */
+}
+
+.transicion-derecha.show {
+  transform: translateX(0); /* Al agregar la clase 'show', el div se desplaza hacia el centro */
+}
+.transicion-derecha1 {
+  transition: transform 3s; /* Transición de transformación con duración de 0.5 segundos */
+  transform: translateX(10%); /* Inicialmente, mueve el div fuera de la vista hacia la derecha */
+}
+
+.transicion-derecha1.show {
+  transform: translateX(0); /* Al agregar la clase 'show', el div se desplaza hacia el centro */
+}
+
+
+
+
+
+/* transicion izquierda */
+.transicion-izq {
+  transition: transform 2s; /* Transición de transformación con duración de 0.5 segundos */
+  transform: translateX(-10%); /* Inicialmente, mueve el div fuera de la vista hacia la derecha */
+}
+
+.transicion-izq.show {
+  transform: translateX(0); /* Al agregar la clase 'show', el div se desplaza hacia el centro */
+}
+.transicion-izq1 {
+  transition: transform 2s; /* Transición de transformación con duración de 0.5 segundos */
+  transform: translateX(-10%); /* Inicialmente, mueve el div fuera de la vista hacia la derecha */
+}
+
+.transicion-izq1.show {
+  transform: translateX(0); /* Al agregar la clase 'show', el div se desplaza hacia el centro */
+}
+/* fadein */
+.fadein {
+ 
+  opacity: 0; /* Inicialmente, establece la opacidad en 0 para que esté oculto */
+  transition: opacity 3s; /* Transición de opacidad con duración de 0.5 segundos */
+}
+
+.fadein.show {
+  opacity: 1; /* Al agregar la clase 'show', la opacidad cambia a 1, mostrando el div con un efecto de fadeIn */
+}
+
+.fadein1 {
+ 
+  opacity: 0; /* Inicialmente, establece la opacidad en 0 para que esté oculto */
+  transition: opacity 3s; /* Transición de opacidad con duración de 0.5 segundos */
+}
+
+.fadein1.show {
+  opacity: 1; /* Al agregar la clase 'show', la opacidad cambia a 1, mostrando el div con un efecto de fadeIn */
+}
+
+.fadein2 {
+ 
+  opacity: 0; /* Inicialmente, establece la opacidad en 0 para que esté oculto */
+  transition: opacity 3s; /* Transición de opacidad con duración de 0.5 segundos */
+}
+
+.fadein2.show {
+  opacity: 1; /* Al agregar la clase 'show', la opacidad cambia a 1, mostrando el div con un efecto de fadeIn */
+}
+
+.fadein3 {
+ 
+  opacity: 0; /* Inicialmente, establece la opacidad en 0 para que esté oculto */
+  transition: opacity 4s; /* Transición de opacidad con duración de 0.5 segundos */
+}
+
+.fadein3.show {
+  opacity: 1; /* Al agregar la clase 'show', la opacidad cambia a 1, mostrando el div con un efecto de fadeIn */
+}
+
+.fadein4 {
+ 
+  opacity: 0; /* Inicialmente, establece la opacidad en 0 para que esté oculto */
+  transition: opacity 3s; /* Transición de opacidad con duración de 0.5 segundos */
+}
+
+.fadein4.show {
+  opacity: 1; /* Al agregar la clase 'show', la opacidad cambia a 1, mostrando el div con un efecto de fadeIn */
+}

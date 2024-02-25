@@ -603,10 +603,15 @@ progress {
 }
 
 .display-1 {
-  font-size: 6vw;
+  font-size: calc(1.725rem + 5.7vw);
   font-family: "Hellix";
   font-weight: 900;
   line-height: 1.2;
+}
+@media (min-width: 1200px) {
+  .display-1 {
+    font-size: 6rem;
+  }
 }
 
 .display-2 {
@@ -8313,23 +8318,23 @@ textarea.form-control-lg {
 }
 
 .fs-1 {
-  font-size: 4.5vw !important;
+  font-size: calc(1.575rem + 3.9vw) !important;
 }
 
 .fs-2 {
-  font-size: 4vw !important;
+  font-size: calc(1.525rem + 3.3vw) !important;
 }
 
 .fs-3 {
-  font-size: 3.5vw !important;
+  font-size: calc(1.475rem + 2.7vw) !important;
 }
 
 .fs-4 {
-  font-size: 3vw !important;
+  font-size: calc(1.425rem + 2.1vw) !important;
 }
 
 .fs-5 {
-  font-size: 7vw !important;
+  font-size: calc(1.375rem + 1.5vw) !important;
 }
 
 .fst-italic {
@@ -11929,6 +11934,23 @@ textarea.form-control-lg {
   }
   .text-xxl-center {
     text-align: center !important;
+  }
+}
+@media (min-width: 1200px) {
+  .fs-1 {
+    font-size: 4.5rem !important;
+  }
+  .fs-2 {
+    font-size: 4rem !important;
+  }
+  .fs-3 {
+    font-size: 3.5rem !important;
+  }
+  .fs-4 {
+    font-size: 3rem !important;
+  }
+  .fs-5 {
+    font-size: 2.5rem !important;
   }
 }
 @media print {

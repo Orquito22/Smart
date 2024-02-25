@@ -228,6 +228,78 @@
 
     <!-- SERVICIOS -->
 
+ 
+            <div class=" service-conteiner" >
+                <div class="d-block  display-6" style="margin-top: 0vh; padding-top: 2vh; color:#356d5e ;">
+                    <b>Servicios</b>
+                </div>
+
+                <img src="./statics/servicios.png" alt="" class="service-icons">
+            
+          <!--   <div class="service-description">   
+                    
+                   <div>   En Smart Residence, entendemos las necesidades del estudiante moderno.
+                        Ofrecemos unidades completamente equipadas</b>, desde electrodomésticos hasta servicio de
+                        limpieza.
+                    </div>
+                    <div>
+                        Nos enorgullece ofrecer un <b>servicio exclusivamente para
+                            estudiantes universitarios.</b>
+                        </div>      
+                       <div> Podrás alquilar unidades para compartir con un compañero
+                        o disfrutar de la estadía vos solo.</div>
+                    
+                </div> -->
+
+                <div class="row ">
+                   
+                    <div class="col-md-12 d-flex align-items-center">
+                        <div class="row" style="margin-left: -2.5vw;">
+                            <div class="col-md-2 col-1 p-0"></div>
+                            <div class="col-md-8 col-10  p-0">
+                                <div class="row ">
+        
+                                    <div class="d-none d-xs-none d-sm-none d-md-block d-lg-block  display-1"
+                                        style="white-space: nowrap;">
+                                    </div>
+        
+                                    <div class="d-block  d-md-none  display-4" style="margin-top: 2vh"></div>
+        
+                                    <p class="d-none d-xs-none d-sm-none d-md-block d-lg-block  fs-1"
+                                        style="white-space: nowrap; margin-top: -2vw;">
+                                    </p>
+        
+                                
+        
+                                  <h4>  En Smart Residence, entendemos las necesidades del estudiante moderno.
+                                    <b>Ofrecemos unidades completamente equipadas, desde electrodomésticos hasta servicio de
+                                        limpieza.</b> <br><br>
+                                  
+                                        Nos enorgullece ofrecer un <b>servicio exclusivamente para
+                                            estudiantes universitarios.</b><br><br>
+                                          
+                                     Podrás alquilar unidades para compartir con un compañero
+                                        o disfrutar de la estadía vos solo.<br><br>
+                                    </h4>
+
+
+
+
+                                </div>
+                            </div>
+        
+                            <div class="col-md-2 col-1 p-0"></div>
+                        </div>
+                    </div>
+        
+        
+                </div>
+        
+
+
+
+
+
     <div class=" service-conteiner">
         <div class="d-block  d-md-none  display-6" style="margin-top: 0vh; padding-top: 2vh; color:#356d5e ;">
             <b>Servicios</b></div>
@@ -393,22 +465,113 @@
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <section class="container-fluid dorado"></section>
+
+
+    
+
     <!-- CONTACTO -->
 
-    <!-- <div class="contaniner-fluid">
-        <div class="row">
+    <section class="container-fluid" id="quienes">
 
-            <div class="col-md-4">Foto</div>
-            <div class="col-md-8">
-                <div class="row">
-                    <div class="col-12">Contacto</div>
-                    <div class="col-12">Forms</div>
+        <div class="row quienes-somos-color">
+
+            <div class="col-lg-5 contacto-left "></div>
+            <div class="col-lg-7">
+
+                <div class="row d-flex align-items-center contact-form-color">
+                    <div class="col-1 p-0 "></div>
+                    <div class="col-10 p-0 mb-5">
+                        <div class=" d-md-block d-lg-block  display-4"
+                            style="white-space: nowrap; padding-top: 4vh; color:#356d5e">Contacto</div>
+                     
+                
+                        <h4 style="padding-bottom: 4vh; color:#356d5e">La reseva de espacio será por orden de pedido. <br>La misma será por un mínimo de 5 meses (marzo a julio y agosto a diciembre).</b>
+                        </h4>
+                        <h4 style="padding-bottom: 4vh; color:#356d5e">Para más información completa el siguiente formulario y nos estaremos contactando.</b>
+                        </h4>
+                        </p>
+                    
+
+                    <div class="contact-form redondeo">
+                    
+                      
+                            <form [formGroup]="contactForm">
+                           
+                                <div >
+                                  <div class="form-group">
+                                    <h4 class="contact-form-label">Nombre y Apellido:</h4>
+                    
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      formControlName="name"
+                                  
+                                    />
+                                  
+                                  </div>
+                               
+                                    <div class="form-group">
+                                      <h4 class="  contact-form-label">Telefono:</h4>
+                      
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        formControlName="name"
+                                  
+                                      />
+                                    
+                                    </div>
+                                 
+                                  <div class="form-group">
+                                    <h4 class=" contact-form-label">e-mail:</h4>
+                                    <input
+                                      type="mail"
+                                      class="form-control"
+                                      formControlName="mail"
+                                    />
+                                 
+                                  </div>
+                              
+                                  <h4 class=" contact-form-label">Mensaje:</h4>
+                                  <textarea
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Escriba aquí su mensaje"
+                                    formControlName="message"
+                              
+                                  ></textarea>
+                                
+                                </div>
+                    
+                              <div class="row justify-content-center mt-4">
+                                <div class="col-auto text-center recaptcha">
+                                  <recaptcha [formControl]="myRecaptcha"></recaptcha>
+                                </div>
+                              </div>
+                            </form>     <div>
+                            <loading-button
+                            class="button button-send"
+                              [isProcessing]="isProcessing"
+                              buttonColorType="#356d5e"
+                              text="ENVIAR"
+                              [disabled]="false"
+                            >
+                          Enviar  </loading-button>
+                          </div>
+                     
+                    </div></div>
+
+
+                   
+                 
+                  
+                     
+                    
                 </div>
+            
             </div>
         </div>
-
-    </div> -->
-
+    </section>
 
     <!-- FOOTER -->
 

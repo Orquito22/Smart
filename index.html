@@ -13,20 +13,23 @@
 <body>
 
     <!-- NAV -->
-    <nav class="navbar navbar-expand-xl bg-body-primary">
+    <nav class="navbar navbar-expand-xl bg-body-primary navFondo">
         <div class="container-fluid">
 
-            <a class="navbar-brand" href="#">
-                <img src="https://smartresidencearg.com/demo/img/nav/logo.png" alt=""
-                    style="height: 18vh; padding: 1vh; margin-left: 9vw;">
+            <a class="navbar-brand d-none d-xl-block" href="#">
+                <img src="./statics/logoNav.svg" alt="" style="height: 18vh; padding: 1vh; margin-left: 9vw;">
             </a>
+            <a class="navbar-brand d-xl-none" href="#">
+                <img src="./statics/logoNav.svg" alt="" style="height: 10vh; padding: 1vh; margin-left: 4vw;">
+            </a>
+
             <!-- clase que maneja los iconos de fb e insta -->
             <div class="d-flex inline-block d-xl-none color-home" style="margin-left: auto; padding-right: 3vw">
                 <a class="nav-link" id="Fb2" href="#" style="margin-right: 1vw;">
-                    <h1><i class="bi bi-facebook"></i></h1>
+                    <img src="./statics/logoFB.svg" alt="" style="height: 40px;">
                 </a>
-                <a class="nav-link " href="#">
-                    <h1><i class="bi bi-instagram"></i></h1>
+                <a class="nav-link" id="IG" href="">
+                    <img src="./statics/logoIG.svg" alt="" style="height: 40px;">
                 </a>
             </div>
 
@@ -66,12 +69,12 @@
                     </li>
                     <li class="nav-item d-none d-xl-block" style="padding-left: 2vw; padding-top: 0.5vh;">
                         <a class="nav-link" href="#">
-                            <h2 class="color-home"><i class="bi bi-facebook"></i></h2>
+                            <img src="./statics/logoFB.svg" alt="" style="height: 40px;">
                         </a>
                     </li>
                     <li class="nav-item d-none d-xl-block" style="padding-right: 4vw; padding-top: 0.5vh;">
                         <a class="nav-link" href="#">
-                            <h2 class="color-home"><i class="bi bi-instagram"></i></h2>
+                            <img src="./statics/logoIG.svg" alt="" style="height: 40px;">
                         </a>
                     </li>
 
@@ -90,9 +93,9 @@
     <!-- HOME -->
 
     <section class="container-fluid" id="home">
-        <div class="row home-left color-home">
+        <div class="row color-home">
             <div class=" col-md-4 order-first order-md-1 home-right"></div>
-            <div class="col-md-8 d-flex align-items-center">
+            <div class="col-md-8 d-flex align-items-center home-left">
                 <div class="row" style="margin-left: -2.5vw;">
                     <div class="col-md-2 col-1 p-0"></div>
                     <div class="col-md-8 col-10  p-0">
@@ -148,13 +151,13 @@
     <section class="container-fluid">
         <div class="row banner-1">
             <div class="col-1 d-none d-sm-block"></div>
-            <div class="col-10 d-none d-sm-block text-center p-4">
+            <div class="col-10 d-none d-sm-block text-center p-4 banner-1">
                 <p>
                 <h3><b>Conecta, aprende y pertenece en Smart Residence, tu elección
                         inteligente para vivir tus años universitarios al máximo.</b></h3>
                 </p>
             </div>
-            <div class="col-12 d-block d-sm-none text-center banner-1-xs">
+            <div class="col-12 d-block d-sm-none text-center banner-1">
                 <p>
                 <h4 class="p-1" style="padding-left: 2vw; padding-right: 2vw;"><b>Conecta, aprende y pertenece en Smart
                         Residence, tu elección
@@ -182,17 +185,18 @@
                     <div class="col-1 p-0"></div>
                     <div class="col-10 p-0">
                         <div class="d-none d-xs-none d-sm-none d-md-block d-lg-block  display-4"
-                            style="white-space: nowrap; padding-top: 4vh;">Quienes Somos</div>
+                            style="white-space: nowrap; padding-top: 8vh;">Quienes Somos</div>
                         <div class="d-block  d-md-none  display-6" style="margin-top: 0vh; padding-top: 2vh;"><b>Quienes
                                 Somos</b></div>
 
-                        <p class="d-none d-xs-none d-sm-none d-md-block d-lg-block fs-2 "
-                            style="white-space: nowrap; margin-top: -2vw;">y que hacemos:</p>
-                        <p class="d-block  d-md-none fs-1" style="white-space: nowrap; margin-top: -3vw;">y
+                        <p class="d-none d-xs-none d-sm-none d-md-block d-lg-block fs-1 "
+                            style="white-space: nowrap; margin-top: -2vh;">y que hacemos:</p>
+
+                        <p class="d-block  d-md-none fs-5" style="white-space: nowrap; margin-top: -3vw;">y
                             que hacemos:</p>
 
                         <p>
-                        <h4 class="" style="padding-bottom: 4vh;">En el corazón de la vibrante ciudad de Buenos Aires,
+                        <h4 class="" style="padding-bottom: 8vh;">En el corazón de la vibrante ciudad de Buenos Aires,
                             Smart Residence se vuelve mucho más que un lugar
                             para quedarse: <b>es tu destino para vivir, aprender y
                                 disfrutar al máximo durante tus años universitarios.</b>
@@ -205,7 +209,7 @@
                     <div class="col-1 p-0"></div>
                     <div class="col-10 p-0">
                         <p>
-                        <h4 class="" style="padding-top: 4vh;padding-bottom: 4vh;">
+                        <h4 class="" style="padding-top: 8vh;padding-bottom: 8vh;">
                             Nos regimos como una opción moderna y tecnológica para aquellos que buscan algo
                             más del
                             lugar donde vivir durante sus años de estudio.
@@ -227,64 +231,94 @@
     </section>
 
     <!-- SERVICIOS -->
-    <!-- 
-    <section class="container-fluid">
-        <div class="row p-3">
-            <div class="col-12 servicios-texto text-center">
-                <span class="fs-1"><b>Servicios</b></span>
-                <div class=" servicios-img"></div>
-                <h5 class="">
-                    <p class="p-3">
-                        En Smart Residence, entendemos las necesidades del estudiante moderno.
-                        Ofrecemos unidades completamente equipadas</b>, desde electrodomésticos hasta servicio de
-                        limpieza.
-                        <br><br>
-                        Nos enorgullece ofrecer un <b>servicio exclusivamente para
-                            estudiantes universitarios.</b>
-                        <br><br>
-                        Podrás alquilar unidades para compartir con un compañero
-                        o disfrutar de la estadía vos solo.
-                    </p>
-                </h5>
-                <p class="fs-2"><b>Contamos con dos tipos de unidades:</b></p>
+
+    <div class=" service-conteiner ">
+        <div class="d-none d-xs-none d-sm-none d-md-block d-lg-block  display-4"
+            style="margin-top: 0vh; padding-top: 2vh; color:#356d5e ;">Servicios</div>
+        <div class="d-block  d-md-none  display-6" style="margin-top: 0vh; padding-top: 2vh; color:#356d5e ;">
+            <b>Servicios</b></div>
+
+
+        <!-- <div class="d-block   display-6" style="margin-top: 0vh; padding-top: 2vh; color:#356d5e ;"><b>Servicios</b>
+        </div> -->
+
+
+
+        <img src="./statics/iconosServicios.svg" alt="" class="service-icons">
+
+        <div class="service-description">
+
+            <div> En Smart Residence, entendemos las necesidades del estudiante moderno.
+                Ofrecemos unidades completamente equipadas</b>, desde electrodomésticos hasta servicio de
+                limpieza.
             </div>
-            <div class="row gx-5 text-center">
-                <div class="col-md-6 p-5 gx-5">
-                    <div class="row gy-3">
-                        <div class="col-12 redondeo mono"><b>Monoambientes con 2 camas simples,
-                            <br> con posibilidad de hacer una cama dos
-                            <br> plazas si se desea.</b>
+            <div>
+                Nos enorgullece ofrecer un <b>servicio exclusivamente para
+                    estudiantes universitarios.</b>
+            </div>
+            <div> Podrás alquilar unidades para compartir con un compañero
+                o disfrutar de la estadía vos solo.</div>
+
+        </div>
+
+        <p class="fs-2 title-service">Contamos con dos tipos de unidades:</p>
+    </div>
+
+    <div class="row col-12 col-md-12  ">
+
+        <div class="row-content">
+            <div class="col-12 col-md-6" style="margin-right: 4rem;">
+                <div class="redondeo mono">Monoambientes con 2 camas simples, con posibilidad de hacer una cama dos
+                    plazas si se desea.</div>
+                <div class="redondeo depa">Departamentos de casi dos ambientes con 3 camas simples, posibilidad de hacer
+                    una cama de dos plazas si se desea.</div>
+            </div>
+
+            <div class="col-12 col-md-6 ">
+
+                <div class="balcon redondeo">
+                    <div class="balcon-title">Todos los departamentos cuentan con balcón. </div>
+                    <div class="list-prop">
+                        <div class="item">
+                            <img src="./statics/puntito.svg" alt="icon" class="icon">
+                            <h5> Cocina completa con: anafe, horno, microondas, heladera. </h5>
                         </div>
-                        <div class="col-12 redondeo depa"><b>Departamentos de casi dos ambientes con 
-                            <br>3 camas simples, posibilidad de hacer una 
-                            <br>cama de dos plazas si se desea.</b></div>
+                        <div class="item">
+                            <img src="./statics/puntito.svg" alt="icon" class="icon">
+                            <h5> Escritorio de estudio </h5>
+                        </div>
+                        <div class="item">
+                            <img src="./statics/puntito.svg" alt="icon" class="icon">
+                            <h5>Ropa blanca. </h5>
+                        </div>
+                        <div class="item">
+                            <img src="./statics/puntito.svg" alt="icon" class="icon">
+                            <h5>Baño con ducha.</h5>
+                        </div>
+                        <div class="item">
+                            <img src="./statics/puntito.svg" alt="icon" class="icon">
+                            <h5>Climatizadas con aire acondicionado.</h5>
+                        </div>
+                        <div class="item">
+                            <img src="./statics/puntito.svg" alt="icon" class="icon">
+                            <h5>Caja de seguridad. </h5>
+                        </div>
+                        <div class="item">
+                            <img src="./statics/puntito.svg" alt="icon" class="icon">
+                            <h5>Cerraduras electrónicas. </h5>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 redondeo balcon"><b>Todos los departamentos cuentan con balcón.
-                        <ul>
-                            <li> Cocina completa con: anafe, horno,
-                                microondas, heladera. </li>
-                            <li>Escritorio de estudio</li>
-                            <li>Ropa blanca. </li>
-                            <li>Baño con ducha.</li>
-                            <li>Climatizadas con aire acondicionado. </li>
-                            <li>Caja de seguridad. </li>
-                            <li>Cerraduras electrónicas.</li>
-                        </ul>
-                    </b>
                 </div>
             </div>
         </div>
-    </section> -->
-
-
+    </div>
 
 
     <!-- BANNER 2 FOTOS -->
 
 
 
-    <section class="container-fluid p-0" >
+    <section class="container-fluid p-0">
         <!-- Tira de imágenes en línea -->
         <div id="imasentira" class="row no-gutters d-none d-md-flex">
             <div class="col-3 p-0">
@@ -360,16 +394,69 @@
 
     </section>
 
+    <!-- OBELISCO -->
 
-    <!-- DONDE ENCONTRARNOS -->
-    <section class="container-fluid p-0" id="ubicacion">
-        <div class="row w-100 d-flex align-items-center p-0" style="height:50vh;">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.5159089520093!2d-58.38579132391233!3d-34.61640075816885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad82e34ed51%3A0xdc836876ece0eb26!2sSalta%20695%2C%20C1074AAM%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1708734265897!5m2!1sen!2sar"
-                style="height: 100%; border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <section class="container-fluid" id="ubicacion" style="background-color: #a39b1f;color: white;" id="home">
+        <div class="row donde">
+            <div class="col-md-4 order-first order-md-1"
+                style="background-position: center;
+        background-size: cover; background-repeat: no-repeat; height: 70vh; background-image: url('./statics/dondeestamos.jpg')"></div>
+
+
+            <div class="col-md-8 d-flex align-items-center">
+                <div class="row" style="margin-left: -2.5vw;">
+                    <div class="col-md-2 col-1 p-0"></div>
+                    <div class="col-md-8 col-10  p-0">
+                        <div class="row ">
+
+                            <div class="d-none d-xs-none d-sm-none d-md-block d-lg-block  display-1"
+                                style="white-space: nowrap;">¿Dónde
+                            </div>
+
+                            <div class="d-block  d-md-none  display-6" style="margin-top: 2vh">¿Dónde</div>
+
+                            <p class="d-none d-xs-none d-sm-none d-md-block d-lg-block  fs-1"
+                                style="white-space: nowrap; margin-top: -2vw;">nos encontramos?
+                            </p>
+
+                            <p class="d-block  d-md-none fs-5" style="white-space: nowrap; margin-top: -2vw;">nos
+                                encontramos?</p>
+                            <!-- <div class=" display-1 z-3" style="white-space: nowrap;">Smart Residence:&nbsp;&nbsp;</div> -->
+
+
+                            <h4 class="">
+                                <p>Ubicados en Salta 695,
+                                    Te ofrecemos la combinación perfecta de comodidad y accesibilidad. Con el objetivo
+                                    claro de adaptarnos a tu vida universitaria, priorizando tu seguridad en todo
+                                    momento.
+                                    <br>
+                                    <br>
+                                    Smart Residence es tu puerta de entrada a una experiencia universitaria única en una
+                                    ubicación estratégica.
+                            </h4>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 col-1 p-0"></div>
+                </div>
+            </div>
+
+
+        </div>
+
         </div>
     </section>
+
+
+    <!-- DONDE ENCONTRARNOS -->
+    <div id="ubicacion">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.5159089520093!2d-58.38579132391233!3d-34.61640075816885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad82e34ed51%3A0xdc836876ece0eb26!2sSalta%20695%2C%20C1074AAM%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1708734265897!5m2!1sen!2sar"
+            style="height: 50vh; width: 100%;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <section class="container-fluid dorado"></section>
 
     <section class="container-fluid dorado"></section>
     <!-- CONTACTO -->
@@ -393,26 +480,30 @@
 
     <div class="container-fluid">
         <div class="row footer d-flex justify-content-center">
-            <img class="" src="./statics/logo-bco.png" alt="" style=" width: 160px;padding-top: 2vh; padding: 1vh;color: white;">
-            <div class="d-flex d-inline-block justify-content-center">
-                <a class="nav-link p-1" id="Fb2" href="#" style="color: white;">
-                    <h1><i class="bi bi-facebook"></i></h1>
+            <img class="" src="./statics/logoFooter.svg" alt=""
+                style=" width: 105px; padding-top: 40px; padding-bottom: 40px;">
+
+            <div class="d-flex d-inline-block justify-content-center" style="padding-bottom: 40px;">
+                <a class="nav-link p-1" id="Fb2" href="#">
+                    <img src="./statics/logoFBb.svg" alt="" style="height: 40px;">
                 </a>
-                <a class="nav-link p-1" href="#" style="color: white;">
-                    <h1><i class="bi bi-instagram"></i></h1>
+                <a class="nav-link p-1" href="#">
+                    <img src="./statics/logoIGb.svg" alt="" style="height: 40px;">
                 </a>
             </div>
+
             <div class="d-flex  justify-content-center">
                 <h4 class="text-white  ">© Copyright 2024 Smart Residence
-                 </h4>
+                </h4>
             </div>
+
             <div class="d-flex  justify-content-center">
                 <h4 class="text-white  ">Diseño_Estevez_Ideas
-                 </h4>
+                </h4>
             </div>
-                
-                
-        
+
+
+
         </div>
     </div>
 

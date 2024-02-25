@@ -1,5 +1,6 @@
 /*FUENTES*/
 @font-face {
+
   font-family: 'Hellix';
   src: url('./statics/fonts/Hellix-Bold.eot');
 
@@ -49,6 +50,26 @@
 }
 
 /* NAV */
+.navFondo {
+  background-image: url('./statics/fondoNav.svg');
+  background-size: 100% auto;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 0vw;
+  background-position-y: -8vh;
+}
+
+@media (max-width: 576px) {
+  
+  .navFondo {
+    
+   
+    background-position-y: 1vh;
+  }
+}
+
+
 
 /*HOME*/
 .centrar-verticalmente {
@@ -59,11 +80,32 @@
 }
 
 .home-left {
+
+
   background-color: #cce296;
-  background-image: url('./statics/fondo-2.png');
-  background-position: center;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+  background-image: url('./statics/fondoHome.svg');
+  background-size: 180% auto;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-position: left;
+  background-position-x: -55vw;
+  background-position-y: -50vh;
+
+}
+
+@media (max-width: 576px) {
+  .home-left {
+
+    background-color: #cce296;
+    background-image: url('./statics/fondoHome.svg');
+    background-size: 250% auto;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-position: left;
+    background-position-x: 0vw;
+    background-position-y: 0vh;
+
+  }
 }
 
 .home-right {
@@ -72,64 +114,97 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 70vh;
+
 }
 
 @media (max-width: 576px) {
+
+
   .home-right {
     height: 40vh;
   }
+
 }
 
 /*BANNER*/
 .banner-1 {
-  background-image: url('./statics/banner-1.png');
-  background-position: center;
-  background-size: 110% auto;
-  background-repeat: no-repeat;
-  background-color: #356d5e;
 
+  background-image: url('./statics/fondoConecta.svg');
+
+  background-size: 100% auto;
+  background-attachment: fixed;
+  background-position-y: -10vh;
+  background-repeat: repeat;
   color: white;
 }
-.banner-1-xs {
-  background-image: url('./statics/banner-1.png');
-  background-position: center;
-  background-size: 120% auto;
-  background-repeat: no-repeat;
-  background-color: #356d5e;
 
-  color: white;
+@media (max-width: 576px) {
+  .banner-1 {
+
+    background-image: url('./statics/banner-1-xs.svg');
+    background-size: 100% auto;
+    background-attachment: fixed;
+
+    background-repeat: repeat;
+    color: white;
+  }
 }
+
+
+
+
+
 
 .quienes-somos-color {
+
+
   color: #17316d;
 }
 
 .quienes-somos-left {
+
   background-position: center;
 
   background-image: url('./statics/quienes-somos.png');
   background-size: 400% auto;
   background-repeat: no-repeat;
   min-height: 45vh;
+
 }
+
 @media (max-width: 992px) {
   .quienes-somos-left {
+
     background-size: 110% auto;
     background-repeat: no-repeat;
     min-height: 45vh;
+
   }
 }
 
 .quienes-somos-blanco {
   background-color: white;
+
 }
 
 .quienes-somos-celeste {
   background-color: #a0beef;
+
 }
 
 /*SERVICIOS*/
+/*SERVICIOS*/
 .service-conteiner {
+  /* background */
+  background-image: url('./statics/fondoServ.svg');
+  background-size: 220% auto;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-position: left;
+  background-position-x: -25vw;
+  background-position-y: -100vh;
+  /*  */
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -138,32 +213,51 @@
   color: #356d5e;
   gap: 2rem;
 }
+
 .service-title {
   color: #356d5e;
   font-weight: 600;
 }
+
+
+.service-description {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #356d5e;
+  padding: 0 18rem;
+  font-size: 1.5rem;
+  gap: 1rem;
+}
+
+
 .title-service {
   color: #356d5e;
   font-weight: 600;
 }
+
 .service-icons {
   height: 3rem;
 }
+
 .list-prop {
   display: flex;
   flex-direction: column;
   justify-content: start;
   gap: 1rem;
 }
+
 .icon {
   width: 1rem;
   height: 1rem;
 }
+
 h5 {
   margin: 0;
   font-weight: 600;
   font-size: 1.5rem;
 }
+
 .item {
   display: flex;
   align-items: center;
@@ -173,11 +267,13 @@ h5 {
 .dual {
   width: 50%;
 }
+
 .left {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
 .row-content {
   display: flex;
   flex-direction: row;
@@ -191,6 +287,7 @@ h5 {
   -moz-border-radius-bottomright: 50px;
   border-bottom-right-radius: 50px;
 }
+
 .contenedores {
   display: flex;
   flex-direction: column;
@@ -234,12 +331,48 @@ h5 {
   font-weight: 600;
   margin-bottom: 1rem;
 }
+
 /* FOTOS */
 
 .no-gutters {
+
   margin-right: 0;
   margin-left: 0;
+
 }
+
+/* FOOTER */
+
+.footer {
+  background-color: #356d5e;
+}
+
+.dorado {
+  background-color: #a39b1f;
+  height: 20px;
+}
+
+
+/* DONDE */
+
+.donde {
+  background-image: url('./statics/fondoDonde.svg');
+  background-size: 150% auto;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-position: center;
+  background-position-x: -40vw;
+  background-position-y: 20vh;
+}
+
+@media (max-width: 576px) {
+  .donde {
+    background-size: 350% auto;
+    background-position-x: -108vw;
+    background-position-y: -44vh;
+  }
+}
+
 /* FOOTER */
 
 .footer {
@@ -260,6 +393,7 @@ h5 {
     padding: 0;
     margin-bottom: 1rem;
   }
+
   /*   .contenedores {
     display: flex;
     flex-direction: column;
@@ -269,6 +403,7 @@ h5 {
   .mono {
     margin-bottom: 1rem;
   }
+
   .service-description {
     padding: 1rem;
   }
@@ -276,6 +411,7 @@ h5 {
   .col-12 {
     padding: 0;
   }
+
 }
 
 /*CONTACTO*/
@@ -312,3 +448,6 @@ h5 {
   background-repeat: no-repeat;
   min-height: 45vh;
 }
+
+}
+

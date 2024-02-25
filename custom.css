@@ -211,7 +211,6 @@
   text-align: center;
   justify-content: center;
   color: #356d5e;
-  gap: 2rem;
 }
 
 .service-title {
@@ -236,9 +235,9 @@
   font-weight: 600;
 }
 
-.service-icons {
-  height: 3rem;
-}
+/* .service-icons {
+  height: 5rem;
+} */
 
 .list-prop {
   display: flex;
@@ -331,6 +330,13 @@ h5 {
   font-weight: 600;
   margin-bottom: 1rem;
 }
+
+/* @media (max-width: 576px){
+  .margen{
+    margin-left: 2rem;
+  }
+} */
+
 
 /* FOTOS */
 
@@ -449,5 +455,5 @@ h5 {
   min-height: 45vh;
 }
 
-}
+
 

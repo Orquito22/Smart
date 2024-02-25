@@ -133,23 +133,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   justify-content: center;
+  color: #356d5e;
   gap: 2rem;
 }
 .service-title {
   color: #356d5e;
   font-weight: 600;
 }
-.service-description {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  color: #356d5e;
-  padding: 0 18rem;
-  font-size: 1.5rem;
-  gap: 1rem;
-}
-
 .title-service {
   color: #356d5e;
   font-weight: 600;
@@ -215,7 +207,7 @@ h5 {
   padding: 3rem;
   font-weight: 600;
   font-size: 1.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .depa {
@@ -240,6 +232,7 @@ h5 {
 .balcon-title {
   font-size: 1.5rem;
   font-weight: 600;
+  margin-bottom: 1rem;
 }
 /* FOTOS */
 
@@ -283,4 +276,39 @@ h5 {
   .col-12 {
     padding: 0;
   }
+}
+
+/*CONTACTO*/
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: #cce296;
+  padding: 2rem;
+}
+.button {
+  background-color: #356d5e;
+  padding: 1rem 3rem;
+  cursor: pointer;
+}
+
+.button-send {
+  -webkit-border-bottom-right-radius: 50px;
+  -moz-border-radius-bottomright: 50px;
+  border-bottom-right-radius: 30px;
+}
+
+.contact-form-color {
+  background-color: white;
+  padding: 0;
+}
+.contact-form-label {
+  color: #356d5e;
+  font-weight: 600;
+}
+.contacto-left {
+  background-position: center;
+  background-image: url('./statics/galleryB.jpg');
+  background-repeat: no-repeat;
+  min-height: 45vh;
 }

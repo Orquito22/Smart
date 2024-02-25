@@ -40,7 +40,6 @@
 
 .color-home {
   color: #356d5e;
-  
 }
 
 /*FRANJA CELESTE*/
@@ -50,6 +49,10 @@
 }
 
 /* NAV */
+
+.navbar-toggler{
+  margin-right:3.5vh;
+}
 .navFondo {
   background-image: url('./statics/fondoNav.svg');
   background-size: 100% auto;
@@ -59,8 +62,6 @@
   background-position-x: 0vw;
   background-position-y: -8vh;
 }
-
-
 
 @media (max-width: 576px) {
   .navFondo {
@@ -85,11 +86,7 @@
   background-position: left;
   background-position-x: -55vw;
   background-position-y: -50vh;
- }
-
-
-
-
+}
 
 @media (max-width: 576px) {
   .home-left {
@@ -105,7 +102,6 @@
 }
 
 .home-right {
-  
   background-image: url('./statics/home.png');
   background-position: center;
   background-size: cover;
@@ -122,21 +118,21 @@
 /*BANNER*/
 .banner-1 {
   background-image: url('./statics/fondoConecta.svg');
-
+  background-color: #356d5e;
   background-size: 100% auto;
   background-attachment: fixed;
-  background-position-y: -10vh;
-  background-repeat: repeat;
+  background-position-y: 35vh;
+  background-repeat: no-repeat;
   color: white;
 }
 
 @media (max-width: 576px) {
   .banner-1 {
     background-image: url('./statics/banner-1-xs.svg');
-    background-size: 100% auto;
+    background-size: 110% auto;
     background-attachment: fixed;
-
-    background-repeat: repeat;
+    background-position: center;
+    background-position-y: 20vh;
     color: white;
   }
 }
@@ -221,11 +217,11 @@
 .icon {
   width: 1rem;
   height: 1rem;
+  margin-top: 0.4rem;
 }
 
 .item {
   display: flex;
-  align-items: center;
   gap: 0.5rem;
 }
 
@@ -270,9 +266,11 @@
   padding: 3rem;
   font-weight: 600;
   font-size: 1.5rem;
+  height: 15rem;
 }
 
 .depa {
+  height: 15rem;
   color: #356d5e;
   background-color: #cce296;
   display: flex;
@@ -345,9 +343,57 @@
 .row-service-left {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 50%;
+  gap: 1.5rem;
 }
 
+@media (width < 1024px) {
+  .row-service {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .row-service-left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .mono {
+    height: 10rem;
+  }
+
+  .depa {
+    height: 10rem;
+  }
+}
+
+@media (width < 768px) {
+  .row-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+
+  .service-icons {
+    height: 2rem;
+  }
+
+  .service-description {
+    padding: 1rem;
+  }
+
+  .col-12 {
+    padding: 0;
+  }
+}
 @media (max-width: 576px) {
   .donde {
     background-size: 350% auto;
@@ -365,44 +411,6 @@
 .dorado {
   background-color: #a39b1f;
   height: 20px;
-}
-
-@media (width < 768px) {
-  .row-content {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    justify-content: space-between;
-    padding: 0;
-    margin-bottom: 1rem;
-  }
-
-  .service-icons {
-    height: 2rem;
-  }
-
-  .row-service {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0;
-    gap: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .row-service-left {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .service-description {
-    padding: 1rem;
-  }
-
-  .col-12 {
-    padding: 0;
-  }
 }
 
 /*CONTACTO*/
@@ -434,7 +442,7 @@
 .contact-form-label {
   color: #356d5e;
   font-weight: 600;
-  padding: 0.5rem 0 ;
+  padding: 0.5rem 0;
 }
 
 .contacto-left {
@@ -444,68 +452,76 @@
   min-height: 45vh;
 }
 
-
 @media (max-width: 1199px) {
-
   .navbar-nav li {
-
     margin-left: 9.2vw;
   }
-
-} 
-
+}
 
 /* ANIMACIONES*/
 /* transicion derecha */
-.transicionY{
+.transicionY {
   transition: transform 2s; /* Transición de transformación con duración de 0.5 segundos */
   transform: translateY(10%);
 }
 .transicionY.show {
-  transform: translateY(0); /* Al agregar la clase 'show', el div se desplaza hacia el centro */
+  transform: translateY(
+    0
+  ); /* Al agregar la clase 'show', el div se desplaza hacia el centro */
 }
 
 .transicion-derecha {
   transition: transform 3s; /* Transición de transformación con duración de 0.5 segundos */
-  transform: translateX(10%); /* Inicialmente, mueve el div fuera de la vista hacia la derecha */
+  transform: translateX(
+    10%
+  ); /* Inicialmente, mueve el div fuera de la vista hacia la derecha */
 }
 
 .transicion-derecha.show {
-  transform: translateX(0); /* Al agregar la clase 'show', el div se desplaza hacia el centro */
+  transform: translateX(
+    0
+  ); /* Al agregar la clase 'show', el div se desplaza hacia el centro */
 }
 .transicion-derecha1 {
   transition: transform 3s; /* Transición de transformación con duración de 0.5 segundos */
-  transform: translateX(10%); /* Inicialmente, mueve el div fuera de la vista hacia la derecha */
+  transform: translateX(
+    10%
+  ); /* Inicialmente, mueve el div fuera de la vista hacia la derecha */
 }
 
 .transicion-derecha1.show {
-  transform: translateX(0); /* Al agregar la clase 'show', el div se desplaza hacia el centro */
+  transform: translateX(
+    0
+  ); /* Al agregar la clase 'show', el div se desplaza hacia el centro */
 }
-
-
-
-
 
 /* transicion izquierda */
 .transicion-izq {
   transition: transform 2s; /* Transición de transformación con duración de 0.5 segundos */
-  transform: translateX(-10%); /* Inicialmente, mueve el div fuera de la vista hacia la derecha */
+  transform: translateX(
+    -10%
+  ); /* Inicialmente, mueve el div fuera de la vista hacia la derecha */
 }
 
 .transicion-izq.show {
-  transform: translateX(0); /* Al agregar la clase 'show', el div se desplaza hacia el centro */
+  transform: translateX(
+    0
+  ); /* Al agregar la clase 'show', el div se desplaza hacia el centro */
 }
 .transicion-izq1 {
   transition: transform 2s; /* Transición de transformación con duración de 0.5 segundos */
-  transform: translateX(-10%); /* Inicialmente, mueve el div fuera de la vista hacia la derecha */
+  transform: translateX(
+    -10%
+  ); /* Inicialmente, mueve el div fuera de la vista hacia la derecha */
 }
 
 .transicion-izq1.show {
-  transform: translateX(0); /* Al agregar la clase 'show', el div se desplaza hacia el centro */
+  transform: translateX(
+    0
+  ); /* Al agregar la clase 'show', el div se desplaza hacia el centro */
 }
 /* fadein */
 .fadein {
- 
   opacity: 0; /* Inicialmente, establece la opacidad en 0 para que esté oculto */
   transition: opacity 3s; /* Transición de opacidad con duración de 0.5 segundos */
 }
@@ -515,7 +531,6 @@
 }
 
 .fadein1 {
- 
   opacity: 0; /* Inicialmente, establece la opacidad en 0 para que esté oculto */
   transition: opacity 3s; /* Transición de opacidad con duración de 0.5 segundos */
 }
@@ -525,7 +540,6 @@
 }
 
 .fadein2 {
- 
   opacity: 0; /* Inicialmente, establece la opacidad en 0 para que esté oculto */
   transition: opacity 3s; /* Transición de opacidad con duración de 0.5 segundos */
 }
@@ -535,7 +549,6 @@
 }
 
 .fadein3 {
- 
   opacity: 0; /* Inicialmente, establece la opacidad en 0 para que esté oculto */
   transition: opacity 4s; /* Transición de opacidad con duración de 0.5 segundos */
 }
@@ -545,11 +558,15 @@
 }
 
 .fadein4 {
- 
   opacity: 0; /* Inicialmente, establece la opacidad en 0 para que esté oculto */
   transition: opacity 3s; /* Transición de opacidad con duración de 0.5 segundos */
 }
 
 .fadein4.show {
   opacity: 1; /* Al agregar la clase 'show', la opacidad cambia a 1, mostrando el div con un efecto de fadeIn */
+}
+@media (width < 380px) {
+  .text-white {
+    font-size: 1rem;
+  }
 }

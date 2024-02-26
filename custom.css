@@ -266,11 +266,11 @@
   padding: 3rem;
   font-weight: 600;
   font-size: 1.5rem;
-  height: 15rem;
+  height: 100%;
 }
 
 .depa {
-  height: 15rem;
+  height: 100%;
   color: #356d5e;
   background-color: #cce296;
   display: flex;
@@ -363,13 +363,7 @@
     width: 100%;
   }
 
-  .mono {
-    height: 10rem;
-  }
 
-  .depa {
-    height: 10rem;
-  }
 }
 
 @media (width < 768px) {
@@ -566,8 +560,10 @@
 .fadein4.show {
   opacity: 1; /* Al agregar la clase 'show', la opacidad cambia a 1, mostrando el div con un efecto de fadeIn */
 }
-@media (width < 380px) {
+
+
+
   .text-white {
     font-size: 1rem;
   }
-}
+

@@ -1,12 +1,12 @@
 /*FUENTES*/
 @font-face {
   font-family: 'Hellix';
-  src: url('./statics/fonts/Hellix-Bold.eot');
+ /* src: url('./statics/fonts/Hellix-Bold.eot'); */
 
   src: local('Hellix Bold'), local('Hellix-Bold'),
-    url('./statics/fonts/Hellix-Bold.eot?#iefix') format('embedded-opentype'),
-    url('./statics/fonts/Hellix-Bold.woff2') format('woff2'),
-    url('./statics/fonts/Hellix-Bold.woff') format('woff'),
+   /* url('./statics/fonts/Hellix-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./statics/fonts/Hellix-Bold.woff') format('woff'), 
+    url('./statics/fonts/Hellix-Bold.woff2') format('woff2') */
     url('./statics/fonts/Hellix-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
@@ -14,12 +14,12 @@
 
 @font-face {
   font-family: 'Hellix';
-  src: url('./statics/fonts/Hellix-Black.eot');
+ /* src: url('./statics/fonts/Hellix-Black.eot'); */
 
   src: local('Hellix Black'), local('Hellix-Black'),
-    url('./statics/fonts/Hellix-Black.eot?#iefix') format('embedded-opentype'),
+    /* url('./statics/fonts/Hellix-Black.eot?#iefix') format('embedded-opentype'),
+    url('./statics/fonts/Hellix-Black.woff') format('woff'),  */
     url('./statics/fonts/Hellix-Black.woff2') format('woff2'),
-    url('./statics/fonts/Hellix-Black.woff') format('woff'),
     url('./statics/fonts/Hellix-Black.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
@@ -27,12 +27,12 @@
 
 @font-face {
   font-family: 'Hellix';
-  src: url('./statics/fonts/Hellix-Medium.eot');
+ /* src: url('./statics/fonts/Hellix-Medium.eot');*/
 
   src: local('Hellix Medium'), local('Hellix-Medium'),
-    url('./statics/fonts/Hellix-Medium.eot?#iefix') format('embedded-opentype'),
+   /* url('./statics/fonts/Hellix-Medium.eot?#iefix') format('embedded-opentype'),
+    url('./statics/fonts/Hellix-Medium.woff') format('woff'), */
     url('./statics/fonts/Hellix-Medium.woff2') format('woff2'),
-    url('./statics/fonts/Hellix-Medium.woff') format('woff'),
     url('./statics/fonts/Hellix-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
@@ -102,7 +102,7 @@
 }
 
 .home-right {
-  background-image: url('./statics/home.png');
+  background-image: url('./statics/home.webp');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -188,6 +188,7 @@
   font-weight: 600;
 }
 
+/* sin uso */
 .service-description {
   display: flex;
   flex-direction: column;
@@ -198,6 +199,7 @@
   gap: 1rem;
 }
 
+/* sin uso */
 .title-service {
   color: #356d5e;
   font-weight: 600;
@@ -259,27 +261,17 @@
 .mono {
   color: white;
   background-color: #a39b1f;
-  display: flex;
-  justify-content: start;
-  text-align: start;
-  align-items: center;
-  padding: 3rem;
-  font-weight: 600;
-  font-size: 1.5rem;
-  height: 100%;
+ 
+  
+  
 }
 
 .depa {
-  height: 100%;
+ 
   color: #356d5e;
   background-color: #cce296;
-  display: flex;
-  justify-content: start;
-  text-align: start;
-  align-items: center;
-  padding: 3rem;
-  font-weight: 600;
-  font-size: 1.5rem;
+
+  
 }
 
 .balcon {
@@ -288,12 +280,11 @@
   text-align: start;
   color: white;
   background-color: #356d5e;
-  padding: 3rem;
+ 
 }
 
 .balcon-title {
-  font-size: 1.5rem;
-  font-weight: 600;
+  
   margin-bottom: 1rem;
 }
 
@@ -363,7 +354,9 @@
     width: 100%;
   }
 
+ 
 
+  
 }
 
 @media (width < 768px) {
@@ -436,8 +429,7 @@
 .contact-form-label {
   color: #356d5e;
   font-weight: 600;
-  
-  
+  padding: 0.5rem 0;
 }
 
 .contacto-left {
@@ -560,10 +552,8 @@
 .fadein4.show {
   opacity: 1; /* Al agregar la clase 'show', la opacidad cambia a 1, mostrando el div con un efecto de fadeIn */
 }
-
-
-
+@media (width < 380px) {
   .text-white {
     font-size: 1rem;
   }
-
+}
